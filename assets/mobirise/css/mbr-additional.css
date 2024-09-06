@@ -1055,8 +1055,8 @@ a {
   }
 }
 .cid-sFGMfPD7iT {
-  padding-top: 17rem;
-  padding-bottom: 16rem;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
   background-image: url("../../../assets/images/pexels-dan-prado-141463.webp");
 }
 .cid-sFGMfPD7iT .mbr-section-title {
@@ -1084,9 +1084,18 @@ a {
 .cid-sFGMfPD7iT .mbr-section-btn .btn:hover {
   background-color: #f0f0f0;
 }
-.cid-sFGOTvnvck .features11 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.cid-sFGOTvnvck .card-title {
+  font-family: 'Bevan', serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+}
+.cid-sFGOTvnvck .mbr-text {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
 .cid-sFGOTvnvck .btn-black {
   background-color: black;
@@ -1096,6 +1105,8 @@ a {
   border-radius: 20px 20px 20px 0;
   border: 2px solid black;
   display: inline-block;
+  font-family: 'Roboto Serif', serif;
+  font-size: 14px;
 }
 .cid-sFGOTvnvck .btn-black:hover {
   background-color: gray;
@@ -1109,12 +1120,14 @@ a {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  font-family: 'Roboto Serif', serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 .cid-sFGOTvnvck .black-box ul {
   list-style: disc;
   padding-left: 20px;
   margin: 0;
-  font-size: 18px;
 }
 .cid-sFGOTvnvck .black-box ul li {
   margin-bottom: 10px;
@@ -1123,6 +1136,10 @@ a {
   width: 80%;
   max-width: 500px;
   border-radius: 10px;
+}
+.cid-sFGOTvnvck .features11 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .cid-sFGNGNNW5A {
   padding-top: 6rem;
