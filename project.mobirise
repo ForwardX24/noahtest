@@ -540,6 +540,22 @@
             ".mbr-text, .mbr-section-btn": {
               "text-align": "center",
               "color": "#ffffff"
+            },
+            ".mbr-section-btn .btn": {
+              "background-color": "white",
+              "color": "black",
+              "border": "2px solid black",
+              "border-radius": "20px 20px 20px 0",
+              "padding": "10px 20px",
+              "font-size": "16px",
+              "font-weight": "bold",
+              "display": "inline-block",
+              "cursor": "pointer",
+              "box-shadow": "2px 2px 5px rgba(0, 0, 0, 0.2)",
+              "transition": "background-color 0.3s ease"
+            },
+            ".mbr-section-btn .btn:hover": {
+              "background-color": "#f0f0f0"
             }
           },
           "_name": "header1",
@@ -557,40 +573,54 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
+            ".features11": {
+              "padding-top": "50px",
+              "padding-bottom": "50px"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
+            ".btn-black": {
+              "background-color": "black",
+              "color": "white",
+              "padding": "10px 20px",
+              "text-decoration": "none",
+              "border-radius": "20px 20px 20px 0",
+              "border": "2px solid black",
+              "display": "inline-block"
             },
-            ".card-wrapper": {
-              "padding-right": "2rem"
+            ".btn-black:hover": {
+              "background-color": "gray"
             },
-            "@media (max-width: 992px)": {
-              ".card": {
-                "margin-bottom": "2rem!important"
-              },
-              ".card-wrapper": {
-                "padding": "0 1rem"
-              }
+            ".black-box": {
+              "background-color": "black",
+              "color": "white",
+              "padding": "20px",
+              "border-radius": "0 20px 20px 20px",
+              "max-width": "300px",
+              "position": "absolute",
+              "bottom": "20px",
+              "right": "20px"
             },
-            "@media (max-width: 767px)": {
-              ".link-wrap": {
-                "align-items": "center"
-              }
+            ".black-box ul": {
+              "list-style": "disc",
+              "padding-left": "20px",
+              "margin": "0",
+              "font-size": "18px"
+            },
+            ".black-box ul li": {
+              "margin-bottom": "10px"
             },
             ".image-wrapper img": {
-              "width": "100%",
-              "object-fit": "cover"
+              "width": "80%",
+              "max-width": "500px",
+              "border-radius": "10px"
             }
           },
           "_name": "features12",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features11\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Items\" name=\"showLink\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg\" mbr-class=\"{'offset-lg-1': fullWidth}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Over Ons</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .link-wrap, .mbr-section-btn\">\n                            Welkom bij The Wizard of Ink, dé tattooshop in Enschede voor unieke tattoos en piercings. Onze getalenteerde artiesten beheersen diverse stijlen zoals realisme, fineline, moderne Japanse en Maori ontwerpen. We garanderen hoogwaardige kwaliteit, hygiëne en een gastvrije sfeer voor een onvergetelijke tattoo-ervaring. Kom langs voor een consultatie en laat ons jouw tattoo-dromen waarmaken!<br></p>\n                        <div class=\"mbr-text mbr-fonts-style counter-container\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".mbr-text\" data-multiline mbr-article></div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Meer Over Ons</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{imageWidth}} md-pb\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/schermafbeelding-2024-09-05-om-16.29.00.png\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features11\" style=\"padding-top: 50px; padding-bottom: 50px;\">\n    <div class=\"container\">\n        <div class=\"row align-items-center\">\n            <!-- Tekstgedeelte links -->\n            <div class=\"col-12 col-lg\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-4\">Over Ons</h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\">\n                            Welkom bij The Wizard of Ink, dé tattooshop in Enschede voor unieke tattoos en piercings. Onze getalenteerde artiesten beheersen diverse stijlen zoals realisme, fineline, moderne Japanse en Maori ontwerpen. We garanderen hoogwaardige kwaliteit, hygiëne en een gastvrije sfeer voor een onvergetelijke tattoo-ervaring. Kom langs voor een consultatie en laat ons jouw tattoo-dromen waarmaken!<br>\n                        </p>\n                        <div class=\"mbr-section-btn mb-4\">\n                            <a class=\"btn btn-black\" href=\"#\">Meer Over Ons</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <!-- Afbeelding en zwarte tekstbox rechts -->\n            <div class=\"col-12 col-lg-6 position-relative\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/scherm_afbeelding%202024-09-06%20om%2010.58.44-1000x1084.png\" alt=\"Tattoo Shop\" style=\"width: 80%; max-width: 500px; border-radius: 10px;\">\n                </div>\n                <!-- Zwarte tekstbox met bullets -->\n                <div class=\"black-box\" style=\"position: absolute; bottom: 20px; right: 20px; background-color: black; color: white; padding: 20px; border-radius: 0 20px 20px 20px; max-width: 300px;\">\n                    <!-- Lijststijl reset -->\n                    <ul style=\"list-style: disc; padding-left: 20px; font-size: 18px; margin: 0;\">\n                        <li style=\"margin-bottom: 10px;\">Multi Award winning</li>\n                        <li style=\"margin-bottom: 10px;\">Elke stijl mogelijk</li>\n                        <li>Altijd persoonlijke aandacht</li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sFGOTvnvck",
           "_anchor": "features12-6",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -757,11 +787,11 @@
           "_sourceTheme": "mobirise5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Laatste Instagram Posts</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    You can arrange your articles with the Mobirise website design software.\n                </h4>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-primary-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "unAgV7EfuT",
+          "_anchor": "content4-t",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content4-t"
+          "_params": {}
         },
         {
           "alias": "eb-instagram-feed",

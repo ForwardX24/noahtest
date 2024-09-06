@@ -1068,30 +1068,61 @@ a {
   text-align: center;
   color: #ffffff;
 }
-.cid-sFGOTvnvck {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
+.cid-sFGMfPD7iT .mbr-section-btn .btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px 20px 20px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
-.cid-sFGOTvnvck .card-wrapper {
-  padding-right: 2rem;
+.cid-sFGMfPD7iT .mbr-section-btn .btn:hover {
+  background-color: #f0f0f0;
 }
-@media (max-width: 992px) {
-  .cid-sFGOTvnvck .card {
-    margin-bottom: 2rem!important;
-  }
-  .cid-sFGOTvnvck .card-wrapper {
-    padding: 0 1rem;
-  }
+.cid-sFGOTvnvck .features11 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-@media (max-width: 767px) {
-  .cid-sFGOTvnvck .link-wrap {
-    align-items: center;
-  }
+.cid-sFGOTvnvck .btn-black {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px 20px 20px 0;
+  border: 2px solid black;
+  display: inline-block;
+}
+.cid-sFGOTvnvck .btn-black:hover {
+  background-color: gray;
+}
+.cid-sFGOTvnvck .black-box {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 0 20px 20px 20px;
+  max-width: 300px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.cid-sFGOTvnvck .black-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 18px;
+}
+.cid-sFGOTvnvck .black-box ul li {
+  margin-bottom: 10px;
 }
 .cid-sFGOTvnvck .image-wrapper img {
-  width: 100%;
-  object-fit: cover;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
 }
 .cid-sFGNGNNW5A {
   padding-top: 6rem;
